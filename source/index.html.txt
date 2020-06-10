@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sample programm</title>
+</head>
+<body>
+<h1> welcome to everyone</h1>
+</body>
+</html>
