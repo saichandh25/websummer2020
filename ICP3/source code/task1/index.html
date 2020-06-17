@@ -1,0 +1,37 @@
+<!-- Rock Paper Scissors HTML file-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <!-- Calling the style CSS file here-->
+    <link rel="stylesheet" href="RPS-style.css">
+</head>
+<body class="body">
+<!-- Header here-->
+<header>
+    <!-- moves the text in oppsite directions-->
+    <marquee behavior="alternate">
+    <h2>Welcome to play the game</h2>
+    </marquee>
+</header>
+
+<div class="results">
+    <p> Rock, paper or scissors?</p>
+</div>
+<div class="options, row">
+    <!-- here we insert the img and user should able select the img-->
+    <div class="option" id="rock">
+        <img src="https://raw.githubusercontent.com/saichandh25/websummer2020/master/ICP3/Documentation/rock.png" style="width:100%; margin-bottom:0.5em;" alt="Rock">
+    </div>
+    <div class="option" id="paper">
+        <img src="https://raw.githubusercontent.com/saichandh25/websummer2020/master/ICP3/Documentation/papper.png" style=" width:100%; margin-right: 1%; margin-bottom:0.5em;" alt="Paper">
+    </div>
+    <div class="option" id="scissors">
+        <img src="https://raw.githubusercontent.com/saichandh25/websummer2020/master/ICP3/Documentation/scissors.png" style="height: 100%; width:100%; margin-right: 1%; margin-bottom:0.5em;" alt="Scissors">
+    </div>
+</div>
+<p id="move_selection">Click any of above option to play</p>
+<script src="RPS.js" charset="utf-8"></script>
+</body>
+</html>
