@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #8df3f8, #a7f639);
+}
+
+
+
+.main {
+    margin-top:20px;
+    background: url('https://raw.githubusercontent.com/saichandh25/websummer2020/master/ICP3/Documentation/3.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    height:400px;
+}
+
+.first {
+    border-bottom: 2px solid black;
+}
+.last {
+    margin-top: 10px;
+}
+
+
+.info {
+    position: absolute;
+    right: 25px;
+    bottom:0;
+}
+.profile-pic {
+    height: 100px;
+}
+
