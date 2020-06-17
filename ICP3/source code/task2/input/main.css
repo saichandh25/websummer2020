@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #C4D9DA, #CFE8E9);
+}
+
+
+
+.main {
+    margin-top:20px;
+    background: url('https://raw.githubusercontent.com/saichandh25/websummer2020/master/ICP3/Documentation/3.png') no-repeat center center fixed;
+
+    height:400px;
+}
+
+.first {
+    border-bottom: 2px solid black;
+}
+.last {
+    margin-top: 10px;
+}
+/* using position to arrangre the lines*/
+
+.info {
+    position: absolute;
+    right: 25px;
+    bottom:0;
+}
+.profile-pic {
+    height: 100px;
+}
+
+/* @media (min-width: 768px){
+    .info {
+        position: absolute;
+        right: 25px;
+        bottom: 0;
+    }
+} */
+
+/* url('https://source.unsplash.com/twukN12EN7c/1920x1080') */
