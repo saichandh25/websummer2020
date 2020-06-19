@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Github User Finder</title>
+    <!-- Title and linking the java script and jquery and css-->
+    <link href="p.css" rel="stylesheet">
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+<text>
+    <h1>Git Hub user finder</h1>
+</text>
+<!-- container field elements and text-->
+<div id="container">
+    <div class="search">
+        <h2 style="color:#3d2929">Enter user name...</h2>
+        <input id="username"  type="text"></input>
+    </div>
+    <div id="profile">
+        <h2></h2>
+        <div class="avatar">
+            <img id="imgavg">
+        </div>
+        <div>
+            <table id="text">
+                <tr>
+                    <td>Name :</td> <td><span id="txtname"></span></td>
+                </tr><tr>
+                <td>ID :</td> <td><span id="txtid"></span></td>
+            </tr><tr>
+                <td>GitHub URL :</td> <td><a id="txturl"></a></td>
+            </tr><tr>
+                <td>Public Repositories :</td> <td><span id="txtrepository"></span></td>
+            </tr></table>
+        </div>
+    </div>
+</div>
