@@ -1,48 +1,64 @@
+
+
 function getGithubInfo(user) {
-    // to send the GET request using the instance of XMLhttpRequest
-    var username='https://api.github.com/users/'+user;
-    console.log(username);
+    //Defining the hard code url od the github to a variable.
+    var url  ='https://api.github.com/users/'+user;
+    //ajax call to get the request of the url and return type data is in json object.
     $.ajax({
         type: "GET",
-        url: username,
+        url: url,
         dataType: 'json',
 
     }).done(function(data){
-        showUser(data);
+        gitUserInfo(data);
 
     }).fail(function(){
-        console.log("Some error Happened");
-        noSuchUser(user);
+        console.log("Error occured while getting the data for the user"+user);
+        if(data.message == "Not Found" || user == '') {
+            alert("User not found. Please enter correct user information");
+        }
     });
 
 }
 
-function showUser(user) {
-    document.getElementById('imgavg').src=user.avatar_url;
-    document.getElementById('txtname').innerText=user.name;
-    document.getElementById('txtid').innerText=user.id;
-    document.getElementById('txturl').href=user.url;
-    document.getElementById('txturl').innerText=user.html_url;
-    document.getElementById('txtrepository').innerText=user.public_repos;
+function gitUserInfo(data) {
+    document.getElementById('imgavg').src=data.avatar_url;
+    document.getElementById('loginName').innerText=data.name;
+    document.getElementById('logonID').innerText=data.id;
+    document.getElementById('homeUrl').innerText=data.html_url;
+    document.getElementById('homeRepository').innerText=data.public_repos;
 }
-function noSuchUser(username) {
-    //to display the correct content
-    if(data.message == "Not Found" || username == '') {
-        alert("User not found");
-    }
-}
+
 $(document).ready(function () {
     $(document).on('keypress', '#username', function (e) {
-        //To check whether user press the enter or not
-        if (e.which == 13) {
-            //retrives user entered
+        // event to verify the value of key is enter
+        if (e.which == 13 || e.keycode == 13) {
+            // getting the input value
             username = $(this).val();
-            //to reset the text in text field
+            //dafault to text value
             $(this).val("");
-            //to store the users response
+            if(username == ''){
+                alert("please enter UserName");
+            }
+          //calling method to pass request
             getGithubInfo(username);
-            //sucessfull results response are shown
-
         }
     })
+
+
 });
+
+function handle(){
+        var username = document.getElementById("username").value;
+        document.getElementById('username').value = '';
+        if(username == ''){
+            alert("Please enter Username");
+        }else {
+            getGithubInfo(username);
+        }
+}
+
+
+
+
+
