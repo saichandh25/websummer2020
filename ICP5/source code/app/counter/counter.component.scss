@@ -1,0 +1,15 @@
+:host {
+    color: #fff;
+    font-size: 30px;
+
+    .counter-container{
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .value-container {
+        display: flex;
+       flex-direction: column;
+    }
+}

@@ -1,0 +1,4 @@
+<app-todo-item *ngFor="let todoItem of todoItems" [todoItem]="todoItem" (deleteItem)=deleteItem($event)>
+</app-todo-item>
+
+<button mat-raised-button color="primary" (click)="addItem()">Add Item</button>
