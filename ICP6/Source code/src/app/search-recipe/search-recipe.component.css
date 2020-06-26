@@ -1,0 +1,53 @@
+.parent-container {
+  position: relative;
+  height:100%;
+  width: 100%;
+  border: 8px ridge rgba(234, 210, 45, 0.75);
+  border-radius: 40px 40px 40px 40px;
+  background: #67CEC4;
+  background: -moz-radial-gradient(center, #67CEC4 0%, #2C8FA4 48%, #6CC549 100%);
+  background: -webkit-radial-gradient(center, #67CEC4 0%, #2C8FA4 48%, #6CC549 100%);
+  background: radial-gradient(ellipse at center, #67CEC4 0%, #2C8FA4 48%, #6CC549 100%);
+}
+
+.child-container {
+
+  text-align: center;
+  position: center;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #1b33aa;
+  font-weight: normal;
+  text-decoration: underline solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+
+}
+.desc {
+  font-family: Georgia;
+  font-size: 17px;
+}
+
+.thumbnail {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  min-width: 40%;
+  border-radius: 5px;
+
+}
+
+.thumbnail-description {
+  min-height: 40px;
+}
+
+.thumbnail:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+}
+
+.header{
+
+}
