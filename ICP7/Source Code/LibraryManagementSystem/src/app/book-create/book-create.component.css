@@ -1,0 +1,27 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.example-full-width:nth-last-child {
+  margin-bottom: 10px;
+}
+
+.button-row {
+  margin: 10px 0;
+}
+.textf{
+  font-family: Georgia, serif;
+  font-size: 18px;
+  color: #090808;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: italic;
+  font-variant: small-caps;
+  text-transform: none;
+}

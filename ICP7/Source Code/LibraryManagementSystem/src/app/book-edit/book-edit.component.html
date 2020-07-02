@@ -1,0 +1,53 @@
+<div class="sub-header">
+  <h1 class="text-center">Change Details Here!!! </h1>
+</div>
+<div class="button-row">
+  <a mat-raised-button color="primary" [routerLink]="['/books']">
+    <mat-icon>list</mat-icon>
+  </a>
+</div>
+<form [formGroup]="bkf" (ngSubmit)="onFormSubmit(bkf.value)">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="EDIT ISBN" formControlName="isbn" [errorStateMatcher]="matcher">
+    <mat-error>
+      <span *ngIf="!bkf.get('isbn').valid && bkf.get('isbn').touched">edit ISBN</span>
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Edit Title" formControlName="title" [errorStateMatcher]="matcher">
+    <mat-error>
+      <span *ngIf="!bkf.get('title').valid && bkf.get('title').touched">Edit Book Title</span>
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Edit Author" formControlName="author" [errorStateMatcher]="matcher">
+    <mat-error>
+      <span *ngIf="!bkf.get('author').valid && bkf.get('author').touched">Edit Book Author</span>
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <textarea matInput placeholder="Edit Description" formControlName="description" [errorStateMatcher]="matcher"></textarea>
+    <mat-error>
+        <span *ngIf="!bkf.get('description').valid && bkf.get('description').touched">Edit Book
+          Description</span>
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Edit Publisher" formControlName="publisher" [errorStateMatcher]="matcher">
+    <mat-error>
+      <span *ngIf="!bkf.get('publisher').valid && bkf.get('publisher').touched">Edit Publisher</span>
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Edit Published Year" formControlName="published_year" [errorStateMatcher]="matcher">
+    <mat-error>
+        <span *ngIf="!bkf.get('published_year').valid && bkf.get('published_year').touched">Edit
+          Published Year</span>
+    </mat-error>
+  </mat-form-field>
+  <div class="button-row">
+    <button type="submit" [disabled]="!bkf.valid" mat-raised-button color="primary">
+      <mat-icon>save</mat-icon>
+    </button>
+  </div>
+</form>
