@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="MainActivity"
+    android:background="@drawable/b">
+
+    <Button
+        android:id="@+id/btnDisplayLoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorAccent"
+        android:minWidth="80dip"
+        android:onClick="getlocmap"
+
+        android:text="LOCATION"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnTakePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDisplayLoc"
+        android:layout_marginTop="64dp"
+        android:background="@android:color/holo_purple"
+        android:onClick="getcamera"
+        android:text="CAMERA :)"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnStorage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRecord"
+        android:layout_marginTop="57dp"
+        android:background="@android:color/holo_blue_bright"
+        android:onClick="saveData"
+        android:text="TEXT DATA"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnTakePhoto"
+        android:layout_marginTop="69dp"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="getVoice"
+        android:text="VOICE"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/i"
+    tools:context=".RecordActivity">
+
+    <Button
+        android:id="@+id/btnStartRecord"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginRight="126dp"
+        android:background="@android:color/holo_green_light"
+        android:onClick="startrecord"
+        android:text="START"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnStopRecord"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStartRecord"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="93dp"
+        android:background="@android:color/holo_red_light"
+        android:onClick="stopRecord"
+        android:text="RESUME"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnStartPlay"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStopRecord"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="94dp"
+        android:background="@android:color/holo_green_light"
+        android:onClick="playRecord"
+        android:text="Play"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnStopPlay"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStartPlay"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="93dp"
+        android:background="@android:color/holo_red_light"
+        android:onClick="stopPlay"
+        android:text="Stop"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
