@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "560948559390",
+    "firebase_url": "https://diet-project-f7b06.firebaseio.com",
+    "project_id": "diet-project-f7b06",
+    "storage_bucket": "diet-project-f7b06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560948559390:android:fc94a8547c6f379e35f80f",
+        "android_client_info": {
+          "package_name": "com.sawapps.baymaxhealthcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560948559390-lp7r1638p1kkk9d43i372lglf7j7gs0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOPuUKhhqLV3pfG8Y-xfZuxZJV-OzdiNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560948559390-lp7r1638p1kkk9d43i372lglf7j7gs0d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
